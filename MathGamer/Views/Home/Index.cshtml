@@ -1,0 +1,61 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Math Game</title>
+    <link href="~/Content/Game-Style.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/Game-Style.css" rel="stylesheet" />
+    <script src="~/Content/Game.js"></script>
+    
+
+</head>
+<body onload="RasgeleSayıUret()">
+
+    <div class="container">
+        <div class="Game-Container">
+
+            <button class="baslat" onclick="KutuRasgeleSayı()">Oyunu başlatmak için tıkla...</button>
+            <button class="asd" onclick="toplam()">Sonuc Tamamsa basın</button>
+
+            <div>   <p id="Rasgele">Sonuc: </p></div>
+            <div id="sonuc"></div>
+            <p id="geriSayim"></p>
+
+            <div class="row">
+                <div id="box1" onclick="Box_Event(1)" class="col-md-2"><p id="Kutu1"></p></div>
+                <div id="box1" onclick="Box_Event(2)" class="col-md-2"><p id="Kutu2"></p></div>
+                <div id="box1" onclick="Box_Event(3)" class="col-md-2"><p id="Kutu3"></p></div>
+
+            </div>
+
+            <div class="row">
+                <div id="box1" onclick="Box_Event(4)" class="col-md-2"><p id="Kutu4"></p></div>
+                <div id="box1" onclick="Box_Event(5)" class="col-md-2"><p id="Kutu5"></p></div>
+                <div id="box1" onclick="Box_Event(6)" class="col-md-2"><p id="Kutu6"></p></div>
+
+            </div>
+
+            <div class="row">
+                <div id="box1" onclick="Box_Event(7)" class="col-md-2"><p id="Kutu7"></p></div>
+                <div id="box1" onclick="Box_Event(8)" class="col-md-2"><p id="Kutu8"></p></div>
+                <div id="box1" onclick="Box_Event(9)" class="col-md-2"><p id="Kutu9"></p></div>
+
+            </div><br />
+
+
+            <div class="row"><!--Sayfam yüklendiğinde gözükmesin puan ve dogru yada yanlış bilgileri burada tutuluyor.-->
+                <div id="box2" class="container">
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery-1.9.1.js"></script>
+</body>
+</html>
